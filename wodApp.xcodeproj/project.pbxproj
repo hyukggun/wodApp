@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0FAA7B42A938EC6003F778D /* wodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7B32A938EC6003F778D /* wodAppApp.swift */; };
+		F0FAA7B62A938EC6003F778D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7B52A938EC6003F778D /* ContentView.swift */; };
+		F0FAA7B82A938EC7003F778D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FAA7B72A938EC7003F778D /* Assets.xcassets */; };
+		F0FAA7BB2A938EC7003F778D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FAA7BA2A938EC7003F778D /* Preview Assets.xcassets */; };
+		F0FAA7C52A938EC7003F778D /* wodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7C42A938EC7003F778D /* wodAppTests.swift */; };
+		F0FAA7CF2A938EC7003F778D /* wodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7CE2A938EC7003F778D /* wodAppUITests.swift */; };
+		F0FAA7D12A938EC7003F778D /* wodAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7D02A938EC7003F778D /* wodAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0FAA7C12A938EC7003F778D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FAA7A82A938EC6003F778D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FAA7AF2A938EC6003F778D;
+			remoteInfo = wodApp;
+		};
+		F0FAA7CB2A938EC7003F778D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FAA7A82A938EC6003F778D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FAA7AF2A938EC6003F778D;
+			remoteInfo = wodApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0FAA7B02A938EC6003F778D /* wodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FAA7B32A938EC6003F778D /* wodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppApp.swift; sourceTree = "<group>"; };
+		F0FAA7B52A938EC6003F778D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0FAA7B72A938EC7003F778D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0FAA7BA2A938EC7003F778D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0FAA7C02A938EC7003F778D /* wodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FAA7C42A938EC7003F778D /* wodAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppTests.swift; sourceTree = "<group>"; };
+		F0FAA7CA2A938EC7003F778D /* wodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FAA7CE2A938EC7003F778D /* wodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppUITests.swift; sourceTree = "<group>"; };
+		F0FAA7D02A938EC7003F778D /* wodAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0FAA7AD2A938EC6003F778D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7BD2A938EC7003F778D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7C72A938EC7003F778D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0FAA7A72A938EC6003F778D = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7B22A938EC6003F778D /* wodApp */,
+				F0FAA7C32A938EC7003F778D /* wodAppTests */,
+				F0FAA7CD2A938EC7003F778D /* wodAppUITests */,
+				F0FAA7B12A938EC6003F778D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0FAA7B12A938EC6003F778D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7B02A938EC6003F778D /* wodApp.app */,
+				F0FAA7C02A938EC7003F778D /* wodAppTests.xctest */,
+				F0FAA7CA2A938EC7003F778D /* wodAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0FAA7B22A938EC6003F778D /* wodApp */ = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7B32A938EC6003F778D /* wodAppApp.swift */,
+				F0FAA7B52A938EC6003F778D /* ContentView.swift */,
+				F0FAA7B72A938EC7003F778D /* Assets.xcassets */,
+				F0FAA7B92A938EC7003F778D /* Preview Content */,
+			);
+			path = wodApp;
+			sourceTree = "<group>";
+		};
+		F0FAA7B92A938EC7003F778D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7BA2A938EC7003F778D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0FAA7C32A938EC7003F778D /* wodAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7C42A938EC7003F778D /* wodAppTests.swift */,
+			);
+			path = wodAppTests;
+			sourceTree = "<group>";
+		};
+		F0FAA7CD2A938EC7003F778D /* wodAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FAA7CE2A938EC7003F778D /* wodAppUITests.swift */,
+				F0FAA7D02A938EC7003F778D /* wodAppUITestsLaunchTests.swift */,
+			);
+			path = wodAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0FAA7AF2A938EC6003F778D /* wodApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FAA7D42A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodApp" */;
+			buildPhases = (
+				F0FAA7AC2A938EC6003F778D /* Sources */,
+				F0FAA7AD2A938EC6003F778D /* Frameworks */,
+				F0FAA7AE2A938EC6003F778D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wodApp;
+			productName = wodApp;
+			productReference = F0FAA7B02A938EC6003F778D /* wodApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0FAA7BF2A938EC7003F778D /* wodAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FAA7D72A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodAppTests" */;
+			buildPhases = (
+				F0FAA7BC2A938EC7003F778D /* Sources */,
+				F0FAA7BD2A938EC7003F778D /* Frameworks */,
+				F0FAA7BE2A938EC7003F778D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FAA7C22A938EC7003F778D /* PBXTargetDependency */,
+			);
+			name = wodAppTests;
+			productName = wodAppTests;
+			productReference = F0FAA7C02A938EC7003F778D /* wodAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0FAA7C92A938EC7003F778D /* wodAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FAA7DA2A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodAppUITests" */;
+			buildPhases = (
+				F0FAA7C62A938EC7003F778D /* Sources */,
+				F0FAA7C72A938EC7003F778D /* Frameworks */,
+				F0FAA7C82A938EC7003F778D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FAA7CC2A938EC7003F778D /* PBXTargetDependency */,
+			);
+			name = wodAppUITests;
+			productName = wodAppUITests;
+			productReference = F0FAA7CA2A938EC7003F778D /* wodAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0FAA7A82A938EC6003F778D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F0FAA7AF2A938EC6003F778D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F0FAA7BF2A938EC7003F778D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F0FAA7AF2A938EC6003F778D;
+					};
+					F0FAA7C92A938EC7003F778D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F0FAA7AF2A938EC6003F778D;
+					};
+				};
+			};
+			buildConfigurationList = F0FAA7AB2A938EC6003F778D /* Build configuration list for PBXProject "wodApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0FAA7A72A938EC6003F778D;
+			productRefGroup = F0FAA7B12A938EC6003F778D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0FAA7AF2A938EC6003F778D /* wodApp */,
+				F0FAA7BF2A938EC7003F778D /* wodAppTests */,
+				F0FAA7C92A938EC7003F778D /* wodAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0FAA7AE2A938EC6003F778D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FAA7BB2A938EC7003F778D /* Preview Assets.xcassets in Resources */,
+				F0FAA7B82A938EC7003F778D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7BE2A938EC7003F778D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7C82A938EC7003F778D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0FAA7AC2A938EC6003F778D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FAA7B62A938EC6003F778D /* ContentView.swift in Sources */,
+				F0FAA7B42A938EC6003F778D /* wodAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7BC2A938EC7003F778D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FAA7C52A938EC7003F778D /* wodAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FAA7C62A938EC7003F778D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FAA7CF2A938EC7003F778D /* wodAppUITests.swift in Sources */,
+				F0FAA7D12A938EC7003F778D /* wodAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0FAA7C22A938EC7003F778D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FAA7AF2A938EC6003F778D /* wodApp */;
+			targetProxy = F0FAA7C12A938EC7003F778D /* PBXContainerItemProxy */;
+		};
+		F0FAA7CC2A938EC7003F778D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FAA7AF2A938EC6003F778D /* wodApp */;
+			targetProxy = F0FAA7CB2A938EC7003F778D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F0FAA7D22A938EC7003F778D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0FAA7D32A938EC7003F778D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FAA7D52A938EC7003F778D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wodApp/Preview Content\"";
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0FAA7D62A938EC7003F778D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wodApp/Preview Content\"";
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0FAA7D82A938EC7003F778D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wodApp";
+			};
+			name = Debug;
+		};
+		F0FAA7D92A938EC7003F778D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wodApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wodApp";
+			};
+			name = Release;
+		};
+		F0FAA7DB2A938EC7003F778D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wodApp;
+			};
+			name = Debug;
+		};
+		F0FAA7DC2A938EC7003F778D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WBV5N68S3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = papayetoo.wodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wodApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0FAA7AB2A938EC6003F778D /* Build configuration list for PBXProject "wodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FAA7D22A938EC7003F778D /* Debug */,
+				F0FAA7D32A938EC7003F778D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FAA7D42A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FAA7D52A938EC7003F778D /* Debug */,
+				F0FAA7D62A938EC7003F778D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FAA7D72A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FAA7D82A938EC7003F778D /* Debug */,
+				F0FAA7D92A938EC7003F778D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FAA7DA2A938EC7003F778D /* Build configuration list for PBXNativeTarget "wodAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FAA7DB2A938EC7003F778D /* Debug */,
+				F0FAA7DC2A938EC7003F778D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0FAA7A82A938EC6003F778D /* Project object */;
+}
