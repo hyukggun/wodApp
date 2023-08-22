@@ -7,9 +7,37 @@
 
 import SwiftUI
 
+private struct LGButton: View {
+    var action: () -> Void
+    
+    var content: () -> Text
+    
+    init(action: @escaping () -> Void,
+         content: @escaping () -> Text) {
+        self.action = action
+        self.content = content
+    }
+    
+    var body: some View {
+        content()
+            .font(.body)
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(Color.blue, lineWidth: 1)
+            )
+            .onTapGesture {
+                action()
+            }
+    }
+}
+
 struct LoginView: View {
     @State var id: String = ""
     @State var password: String = ""
+    @State var showToast: Bool = false
+    @State var message: String = ""
     var body: some View {
         VStack {
             Text("Welcome back to our app!!")
@@ -18,36 +46,42 @@ struct LoginView: View {
                     .padding(.vertical, 10)
                     .padding(.leading, 10)
                 TextField("password", text: $password)
+                    .textContentType(.password)
                     .padding(.vertical, 10)
                     .padding(.leading, 10)
             }
+            .cornerRadius(10)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             .border(Color.red.opacity(0.1), width:  1)
             .padding(.all, 24)
+            
+            
+            
             HStack {
-                Button(action:  {
-                    if checkId() {
-                        print("id 통과")
-                    } else {
-                        print("id 통과 x")
+                LGButton(action: {
+                    if !checkId() {
+                        showToast = true
+                        message = "ID를 입력해주세요."
+                        return
                     }
-                }) {
-                    Text("Login")
-                }
-                .padding(.all, 20)
-                .background(Color.green)
-                .cornerRadius(5)
+                    
+                    if !checkPassword() {
+                        showToast = true
+                        message = "PASSWORD를 입력해주세요."
+                        return
+                    }
+                }) { Text("Login") }
                 
-                Button(action:  {
+                
+                LGButton(action:  {
                     print("sign in")
                 }) {
                     Text("Sign in")
                 }
-                .padding(20)
-                .background(Color.green)
-                .cornerRadius(5)
             }
         }
         .navigationBarBackButtonHidden()
+        .toast(isPresented: $showToast, message: message)
     }
     
     private func checkId() -> Bool {

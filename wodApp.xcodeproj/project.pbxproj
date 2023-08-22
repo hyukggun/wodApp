@@ -15,6 +15,7 @@
 		F0FAA7CF2A938EC7003F778D /* wodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7CE2A938EC7003F778D /* wodAppUITests.swift */; };
 		F0FAA7D12A938EC7003F778D /* wodAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7D02A938EC7003F778D /* wodAppUITestsLaunchTests.swift */; };
 		F0FAA7DE2A939AE0003F778D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7DD2A939AE0003F778D /* LoginView.swift */; };
+		F0FAA7E02A94D5AF003F778D /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7DF2A94D5AF003F778D /* Toaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F0FAA7CE2A938EC7003F778D /* wodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppUITests.swift; sourceTree = "<group>"; };
 		F0FAA7D02A938EC7003F778D /* wodAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0FAA7DD2A939AE0003F778D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F0FAA7DF2A94D5AF003F778D /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				F0FAA7B72A938EC7003F778D /* Assets.xcassets */,
 				F0FAA7B92A938EC7003F778D /* Preview Content */,
 				F0FAA7DD2A939AE0003F778D /* LoginView.swift */,
+				F0FAA7DF2A94D5AF003F778D /* Toaster.swift */,
 			);
 			path = wodApp;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				F0FAA7DE2A939AE0003F778D /* LoginView.swift in Sources */,
 				F0FAA7B62A938EC6003F778D /* ContentView.swift in Sources */,
+				F0FAA7E02A94D5AF003F778D /* Toaster.swift in Sources */,
 				F0FAA7B42A938EC6003F778D /* wodAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
