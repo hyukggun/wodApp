@@ -38,48 +38,75 @@ struct LoginView: View {
     @State var password: String = ""
     @State var showToast: Bool = false
     @State var message: String = ""
+    @State var signInResult: Bool = false
+    @State var signUp: Bool = false
+    
     var body: some View {
-        VStack {
-            Text("Welcome back to our app!!")
+        NavigationStack {
             VStack {
-                TextField("Id", text: $id)
-                    .padding(.vertical, 10)
-                    .padding(.leading, 10)
-                TextField("password", text: $password)
-                    .textContentType(.password)
-                    .padding(.vertical, 10)
-                    .padding(.leading, 10)
-            }
-            .cornerRadius(10)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .border(Color.red.opacity(0.1), width:  1)
-            .padding(.all, 24)
-            
-            
-            
-            HStack {
-                LGButton(action: {
-                    if !checkId() {
-                        showToast = true
-                        message = "ID를 입력해주세요."
-                        return
-                    }
-                    
-                    if !checkPassword() {
-                        showToast = true
-                        message = "PASSWORD를 입력해주세요."
-                        return
-                    }
-                }) { Text("Login") }
-                
-                
-                LGButton(action:  {
-                    print("sign in")
-                }) {
-                    Text("Sign in")
+                Text("Welcome back to our app!!")
+                VStack {
+                    TextField("enter your email", text: $id)
+                        .textInputAutocapitalization(.never)
+                        .padding(10)
+                    SecureField("password", text: $password)
+                        .padding(10)
                 }
+                .cornerRadius(10)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .border(Color.red.opacity(0.1), width:  1)
+                .padding(.all, 24)
+                
+                
+                HStack {
+                    LGButton(action: {
+                        if !checkId() {
+                            showToast = true
+                            message = "ID를 입력해주세요."
+                            return
+                        }
+                        
+                        if !checkPassword() {
+                            showToast = true
+                            message = "PASSWORD를 입력해주세요."
+                            return
+                        }
+                        
+                        Task {
+                            let result = await AuthManagerImpl().signIn(email: id, password: password)
+                            showToast = true
+                            if result {
+                                message = "로그인 성공"
+                            } else {
+                                message = "로그인 실패"
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                signInResult = result
+                            }
+                        }
+                    }) { Text("Login") }
+                        
+                    
+                    LGButton(action:  {
+                        print("sign in")
+                        signUp = true
+                    }) {
+                        Text("Sign in")
+                    }
+                }
+                Text("This content is by papayetoo")
+                    .offset(y: 50)
+                //                NavigationLink(destination: HomeView(),
+                //                               isActive: $signInResult) {
+                //                    EmptyView()
+                //                }
             }
+            .toolbar(.hidden, for: .navigationBar)
+            .edgesIgnoringSafeArea(.all)
+            .navigationDestination(isPresented: $signInResult, destination: { HomeView() })
+            .navigationDestination(isPresented: $signUp, destination: { SignUpView() })
         }
+        .edgesIgnoringSafeArea(.all)
         .navigationBarBackButtonHidden()
         .toast(isPresented: $showToast, message: message)
     }
@@ -92,10 +119,7 @@ struct LoginView: View {
     }
     
     private func checkPassword() -> Bool {
-        if password.isEmpty {
-            return false
-        }
-        return password.count >= 12
+        return !password.isEmpty
     }
 }
 

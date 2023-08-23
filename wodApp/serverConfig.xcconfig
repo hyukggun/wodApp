@@ -1,0 +1,12 @@
+//
+//  serverConfig.xcconfig
+//  wodApp
+//
+//  Created by 최최광현 on 2023/08/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PROJECT_URL=https:/$()/swaqfsnelitxotkphizl.supabase.co
+PUBLIC_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3YXFmc25lbGl0eG90a3BoaXpsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTEyMDczNDYsImV4cCI6MjAwNjc4MzM0Nn0.wMvcUD1Zo_gu8631o0qnGK_aBwTjlZoEuIfnOZb2od8

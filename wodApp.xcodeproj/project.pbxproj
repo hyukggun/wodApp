@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F04B9FD92A962FB0003C5EB7 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = F04B9FD82A962FB0003C5EB7 /* Supabase */; };
+		F04B9FDB2A962FF9003C5EB7 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9FDA2A962FF9003C5EB7 /* AuthManager.swift */; };
+		F04B9FE12A9631F5003C5EB7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9FE02A9631F5003C5EB7 /* Configuration.swift */; };
+		F04B9FE32A9634F9003C5EB7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9FE22A9634F9003C5EB7 /* HomeView.swift */; };
+		F04B9FE52A963ED3003C5EB7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9FE42A963ED3003C5EB7 /* SignUpView.swift */; };
 		F0FAA7B42A938EC6003F778D /* wodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7B32A938EC6003F778D /* wodAppApp.swift */; };
 		F0FAA7B62A938EC6003F778D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAA7B52A938EC6003F778D /* ContentView.swift */; };
 		F0FAA7B82A938EC7003F778D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FAA7B72A938EC7003F778D /* Assets.xcassets */; };
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F04B9FDA2A962FF9003C5EB7 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		F04B9FDC2A9630A4003C5EB7 /* serverConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = serverConfig.xcconfig; sourceTree = "<group>"; };
+		F04B9FDF2A963197003C5EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F04B9FE02A9631F5003C5EB7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F04B9FE22A9634F9003C5EB7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F04B9FE42A963ED3003C5EB7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F0FAA7B02A938EC6003F778D /* wodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FAA7B32A938EC6003F778D /* wodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wodAppApp.swift; sourceTree = "<group>"; };
 		F0FAA7B52A938EC6003F778D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04B9FD92A962FB0003C5EB7 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +110,18 @@
 		F0FAA7B22A938EC6003F778D /* wodApp */ = {
 			isa = PBXGroup;
 			children = (
+				F04B9FDF2A963197003C5EB7 /* Info.plist */,
 				F0FAA7B32A938EC6003F778D /* wodAppApp.swift */,
 				F0FAA7B52A938EC6003F778D /* ContentView.swift */,
 				F0FAA7B72A938EC7003F778D /* Assets.xcassets */,
 				F0FAA7B92A938EC7003F778D /* Preview Content */,
 				F0FAA7DD2A939AE0003F778D /* LoginView.swift */,
 				F0FAA7DF2A94D5AF003F778D /* Toaster.swift */,
+				F04B9FDA2A962FF9003C5EB7 /* AuthManager.swift */,
+				F04B9FDC2A9630A4003C5EB7 /* serverConfig.xcconfig */,
+				F04B9FE02A9631F5003C5EB7 /* Configuration.swift */,
+				F04B9FE22A9634F9003C5EB7 /* HomeView.swift */,
+				F04B9FE42A963ED3003C5EB7 /* SignUpView.swift */,
 			);
 			path = wodApp;
 			sourceTree = "<group>";
@@ -149,6 +167,9 @@
 			dependencies = (
 			);
 			name = wodApp;
+			packageProductDependencies = (
+				F04B9FD82A962FB0003C5EB7 /* Supabase */,
+			);
 			productName = wodApp;
 			productReference = F0FAA7B02A938EC6003F778D /* wodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +242,9 @@
 				Base,
 			);
 			mainGroup = F0FAA7A72A938EC6003F778D;
+			packageReferences = (
+				F04B9FD72A962FB0003C5EB7 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = F0FAA7B12A938EC6003F778D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04B9FE12A9631F5003C5EB7 /* Configuration.swift in Sources */,
+				F04B9FE32A9634F9003C5EB7 /* HomeView.swift in Sources */,
 				F0FAA7DE2A939AE0003F778D /* LoginView.swift in Sources */,
 				F0FAA7B62A938EC6003F778D /* ContentView.swift in Sources */,
+				F04B9FE52A963ED3003C5EB7 /* SignUpView.swift in Sources */,
 				F0FAA7E02A94D5AF003F778D /* Toaster.swift in Sources */,
 				F0FAA7B42A938EC6003F778D /* wodAppApp.swift in Sources */,
+				F04B9FDB2A962FF9003C5EB7 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +447,7 @@
 		};
 		F0FAA7D52A938EC7003F778D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04B9FDC2A9630A4003C5EB7 /* serverConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,6 +457,7 @@
 				DEVELOPMENT_TEAM = WBV5N68S3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +487,7 @@
 				DEVELOPMENT_TEAM = WBV5N68S3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -591,6 +622,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F04B9FD72A962FB0003C5EB7 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F04B9FD82A962FB0003C5EB7 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F04B9FD72A962FB0003C5EB7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0FAA7A82A938EC6003F778D /* Project object */;
 }
